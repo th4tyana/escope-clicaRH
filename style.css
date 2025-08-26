@@ -194,12 +194,6 @@ header {
     grid-template-columns: 260px 1fr;
 }
 
-@media (max-width: 1024px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Sidebar */
 .sidebar {
     position: sticky;
@@ -362,10 +356,34 @@ footer {
         color: #000;
     }
 }
+
+
+/* Otimizações para mobile (apenas o necessário) */
 @media (max-width: 1024px) {
-  .sidebar {
-    z-index: 0;
-    position: static;
-    top: auto;
-  }
+    .tools {
+        display: none;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+        padding: 14px;
+    }
+
+    .logo, .search {
+        flex: 1 1 100%;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    .sidebar {
+        position: static;
+        margin-bottom: 24px;
+        z-index: auto; 
+    }
+
+    main {
+        display: block;
+    }
 }
