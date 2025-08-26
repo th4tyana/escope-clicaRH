@@ -362,3 +362,10 @@ footer {
         color: #000;
     }
 }
+@media (max-width: 1024px) {
+  .sidebar {
+    z-index: 0;
+    position: static;
+    top: auto;
+  }
+}
