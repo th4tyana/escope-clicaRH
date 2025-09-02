@@ -149,8 +149,11 @@ header {
     color: var(--muted);
 }
 
-/* Hero */
-.hero { margin: 28px 0 16px; }
+/* Hero div pai*/
+.hero {
+   display: grid;
+   place-items: center; 
+   height: 50vh; }
 
 .hero .panel {
     border: 1px solid var(--border);
